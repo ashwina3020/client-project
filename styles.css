@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  color: white;
+}
+
+body, html {
+  height: 100%;
+  color: white;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory; /* Ensure smooth snapping */
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.main-heading {
+  margin: 2rem;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.main-heading .fifty,
+.main-heading .gold {
+  border-bottom: 3px dotted white;
+}
+
+.main-text {
+  margin: 2rem;
+  padding: 0 2rem;
+}
+
+.main-para {
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 100vw;
+  height: auto;
+  justify-items: center;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  background-color: ghostwhite;
+  padding: 5px 5px;
+  justify-content: center;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  padding: 10px 5px;
+}
+
+@keyframes motionBg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.top-offer {
+  background: radial-gradient(circle, rgb(255, 208, 0), yellow);
+  background-size: 200% 200%;
+  animation: motionBg 5s infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 1rem;
+  padding: 1.5rem 1rem;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.top-offer-color {
+  color: black;
+}
+
+.trophy {
+  width: 100px;
+  height: 120px;
+}
+
+#golden-trophy {
+  background-color: rgb(51, 51, 96);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 1rem;
+  padding: 1.5rem 1rem;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.content-para {
+  margin: 10px 10px;
+  color: white;
+  padding: 20px 40px;
+}
+
+.video {
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.bg-video {
+  border-radius: 5px;
+  margin: 10px 10px;
+}
+
+.box {
+  background-color: #424242;
+  width: 90%;
+  height: 75vh;
+  display: flex;
+  padding: 4rem 3rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  border-radius: 70px;
+  border: 3px solid #9c9c9c;
+  opacity: 100%;
+}
+
+.meta-ads {
+  background: radial-gradient(circle, red, rgb(151, 0, 0));
+  background-size: 200% 200%;
+  animation: metaMotionBg 6s infinite;
+  padding: 3rem 2rem;
+  margin: 2rem 4rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.meta-ads .cut-price {
+  text-decoration: line-through;
+  color: #fbff00;
+}
+
+.founder {
+  background-color: rgb(51, 51, 96);
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 4rem;
+  margin: 2rem 4rem;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.founder-image {
+  height: 30%;
+  width: 15%;
+  border-radius: 5px;
+}
+
+.founder-para {
+  padding: 2rem 3rem;
+}
+
+.face {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 4rem;
+  padding: 2rem 4rem 0rem 4rem;
+  border-radius: 5px;
+  margin-bottom: 0px;
+}
+
+.face-founder {
+  width: 80%;
+}
+
+.gold {
+  color: gold;
+}
+
+.header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.header .highlight {
+  color: #FFC107;
+}
+
+.header p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.video-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.video-card {
+  background-color: #1A2236;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+}
+
+.video-card p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.logos-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.logos-section img {
+  width: 100px;
+  height: auto;
+  background-color: #1A2236;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.cta {
+  background-color: #FFC107;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #10182B;
+  font-weight: bold;
+}
+
+.timeline-container {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.timeline-line {
+  position: absolute;
+  width: 5px;
+  background: linear-gradient(to bottom, #FFC107, #FFC107); /* Initial yellow line */
+  top: 0;
+  left: -100px;
+  transition: background 0.3s ease; /* Smooth gradient transition */
+}
+
+.timeline-section {
+  position: relative;
+  margin-bottom: 2rem;
+  animation : movedown 2s linear forwards;
+  opacity : 0;
+}
+@keyframes movedown {
+  0% {
+    opacity : 1;
+    transform : translateY(-100px);
+  }
+  100% {
+    opacity : 1;
+    transform : translateY(0);
+  }
+}
+
+.timeline-section .circle {
+  width: 20px;
+  height: 20px;
+  background-color: #FFC107;
+  border-radius: 50%;
+  position: absolute;
+  left: 30%; /* Align the circle with the timeline line */
+  transform: translate(-50%);
+}
+
+.timeline-section .content {
+  background-color: #1A2236;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 35%; /* Shift content to the right of the timeline line */
+}
+
+.timeline-section .content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+
+.below-box {
+  z-index: 5;
+  background-color: black;
+}
+
+.timeline-line {
+
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: #fff;
+  top: 0;
+  left: 20%;
+  z-index: 10;
+  animation : moveline 8s linear forwards;
+  overflow: hidden;
+  
+}
+
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.timeline-section {
+  position: relative;
+  margin-bottom: 2rem;
+  opacity:0;
+  transition: opacity 1s ease-in-out;
+}
+
+
+
+.timeline-section .circle {
+  width: 40px;
+  height: 40px;
+  background-color: #808080; /* Default grey */
+  border-radius: 50%;
+  position: absolute;
+  left: 20.3%;
+  transition: background-color 0.3s ease-in-out;
+
+}
+
+.timeline-section.active .circle {
+  background-color: #FFC107; /* Yellow for active sections */
+}
+
+.timeline-section .content {
+  background-color: #1A2236;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.introduction{
+  padding: 4rem 4rem;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.intro-image{
+height: 20%;
+width: 30%;
+}
+
+.intro-content{
+  padding: 2rem 2rem;
+  border: 1px solid white;
+}
+

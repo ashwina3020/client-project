@@ -99,3 +99,5 @@ changeCircleColor('circle2', 'content2', 2500); // After 2.5 seconds
 changeCircleColor('circle3', 'content3', 4000); // After 4 seconds
 changeCircleColor('circle4', 'content4', 5500); // After 5.5 seconds
 
+
+

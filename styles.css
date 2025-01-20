@@ -6,6 +6,9 @@
 
 p {
   color: white;
+  font-size: 2.13rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 body, html {
@@ -16,15 +19,25 @@ body, html {
   overflow-x: hidden;
   scroll-snap-type: y mandatory; /* Ensure smooth snapping */
 }
-
+h1{
+  font-size: 4rem;
+}
 h3 {
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
 
+h4{
+  font-size: 3rem;
+}
+
+h5{
+  font-size: 2.7rem;
+}
+
 .main-heading {
   margin: 2rem;
-  padding: 0 2rem;
+  padding: 0 1rem;
   display: flex;
   justify-content: center;
 }
@@ -36,31 +49,36 @@ h3 {
 
 .main-text {
   margin: 2rem;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .main-para {
   margin-bottom: 20px;
+  font-size: 2.5rem;
 }
 
 .container {
-  width: 100vw;
-  height: auto;
-  justify-items: center;
+  max-width: 1200px; /* Adjust as per design */
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 nav {
   align-items: center;
   display: flex;
   background-color: ghostwhite;
-  padding: 5px 5px;
+  padding: 50px 5px;
   justify-content: center;
   top: 0;
   z-index: 10;
 }
 
 .logo {
-  width: 150px;
+  width: 550px;
   height: auto;
   padding: 10px 5px;
 }
@@ -78,25 +96,27 @@ nav {
 }
 
 .top-offer {
-  background: radial-gradient(circle, rgb(255, 208, 0), yellow);
+  background: radial-gradient(circle, rgb(255, 174, 0), yellow);
   background-size: 200% 200%;
   animation: motionBg 5s infinite;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 1rem 1rem;
-  padding: 1.5rem 1rem;
+  padding: 3.5rem 2rem;
   border: 1px solid grey;
   border-radius: 5px;
 }
 
 .top-offer-color {
   color: black;
+  font-size: 3.4rem;
+  font-weight: 700;
 }
 
 .trophy {
-  width: 100px;
-  height: 120px;
+  width: 150px;
+  height: auto;
 }
 
 #golden-trophy {
@@ -105,7 +125,7 @@ nav {
   align-items: center;
   justify-content: center;
   margin: 1rem 1rem;
-  padding: 1.5rem 1rem;
+  padding: 2.5rem 8rem;
   border: 1px solid grey;
   border-radius: 5px;
 }
@@ -114,6 +134,7 @@ nav {
   margin: 10px 10px;
   color: white;
   padding: 20px 40px;
+  font-size: 2.3rem;
 }
 
 .video {
@@ -129,10 +150,13 @@ nav {
   margin: 10px 10px;
 }
 
+
+
+
 .box {
   background-color: #424242;
-  width: 90%;
-  height: 75vh;
+  width: 97%;
+  height: 30REM;
   display: flex;
   padding: 4rem 3rem;
   justify-content: center;
@@ -144,12 +168,63 @@ nav {
   border-radius: 70px;
   border: 3px solid #9c9c9c;
   opacity: 100%;
+} 
+
+.box3{
+  background-color: rgb(69, 0, 0);
+  border-color: rgb(255, 0, 0);
 }
 
+.box4{
+  background-color: rgb(0, 53, 0);
+  border-color: green;
+}
+
+.card-header{
+  font-size: 3.5rem;
+}
+
+.yellow-box {
+  font-size: 3rem;
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Horizontally center items */
+  align-items: center; /* Vertically center items */
+  text-align: center; /* Center text alignment */
+  height: 100%; /* Optional: Ensure full height for centering */
+  width: 100%; /* Optional: Ensure full width for centering */
+  color: black;
+}
+.item{
+  size: 3rem;
+  font-size: 2.1rem;
+  padding-top: 1.8rem;
+}
+
+.cross-item{
+  size: 3rem;
+  font-size: 2.2rem;
+  padding-top: 1.8rem;
+}
+
+.checkmark {
+  background-color: green;
+  padding: 10px;
+  border-radius: 50px;
+  margin: 10px;
+}
+
+.error-icon{
+  background-color: red;
+  padding: 10px;
+  border-radius: 50px;
+  margin: 10px;
+}
+
+
 .meta-ads {
-  background: radial-gradient(circle, red, rgb(151, 0, 0));
+  background: radial-gradient(circle, red, rgb(108, 0, 0));
   background-size: 200% 200%;
-  animation: metaMotionBg 6s infinite;
+  animation: MotionBg 4s infinite;
   padding: 3rem 2rem;
   margin: 2rem 4rem;
   border-radius: 10px;
@@ -157,18 +232,29 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+ 
 }
 
 .meta-ads .cut-price {
   text-decoration: line-through;
   color: #fbff00;
+  animation: cut-price 1s infinite; /* Apply the animation to this element */
+  font-size: 3.8rem;
+}
+
+@keyframes cut-price {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
 }
 
 .founder {
   background-color: rgb(51, 51, 96);
   display: flex;
   flex-direction: row;
-  padding: 2rem 4rem;
+  padding: 2rem 1rem;
   margin: 2rem 4rem;
   border-radius: 5px;
   align-items: center;
@@ -176,13 +262,15 @@ nav {
 }
 
 .founder-image {
-  height: 30%;
-  width: 15%;
+  height: 70%;
+  width: 30%;
   border-radius: 5px;
+  padding-left: 4rem;
 }
 
 .founder-para {
-  padding: 2rem 3rem;
+  padding: 2rem 1rem;
+  font-size: 2.3rem;
 }
 
 .face {
@@ -195,7 +283,7 @@ nav {
 }
 
 .face-founder {
-  width: 80%;
+  width: 70%;
 }
 
 .gold {
@@ -203,9 +291,27 @@ nav {
 }
 
 .header h1 {
-  font-size: 24px;
+  font-size: 3.4rem;
   margin-bottom: 10px;
   line-height: 1.4;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.issues-list{
+  font-size: 2rem;
+}
+
+.header-box3{
+  font-size: 3.3rem;
+    color: red;
+    background-color: #e5ff00;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .header .highlight {
@@ -213,7 +319,7 @@ nav {
 }
 
 .header p {
-  font-size: 16px;
+  font-size: 2.5rem;
   margin-bottom: 30px;
 }
 
@@ -229,8 +335,7 @@ nav {
   padding: 10px;
   border-radius: 8px;
   text-align: center;
-  max-width: 300px;
-  width: 100%;
+  width: 400px;
 }
 
 .video-card iframe {
@@ -335,7 +440,7 @@ nav {
   content: '';
   position: absolute;
   width: 5px;
-  height: 100%;
+  height: 400px;
   background-color: #fff;
   top: 0;
   left: 20%;
@@ -394,6 +499,8 @@ nav {
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  position: relative;
+  background-color: black;
 }
 
 .intro-image{
@@ -403,6 +510,129 @@ width: 30%;
 
 .intro-content{
   padding: 2rem 2rem;
-  border: 1px solid white;
+  border: 1px solid white;
 }
 
+.image-container {
+  flex: 1;
+  max-width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infographic-img {
+ width: 100%;
+ height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.content-container {
+  flex: 1;
+  max-width: 50%;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align text content */
+  text-align: center; /* Align text in the center */
+}
+
+.content-container h4 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: white;
+  line-height: 1.4;
+}
+
+.content-container .highlight {
+  color: gold;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center-align stats */
+  gap: 10px;
+}
+
+.stat-item {
+  padding: 14px 15px;
+  align-items: center;
+  gap: 10px;
+}
+
+.stat-item i {
+  font-size: 1.5rem;
+}
+
+.red-icon {
+  background-color: red;
+  color: red;
+}
+
+.green-icon {
+  background-color: green;
+  color: green;
+}
+
+.stat-item h5 {
+  font-size: 2.7rem;
+  margin: 0;
+}
+
+/* .infographic-img{
+  width: 1000px;
+  height: 600px;
+} */
+
+/* Arrow Container */
+.arrow-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Circle Background */
+.arrow-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Green and Red Background */
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+/* Arrow Shape */
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+
+/* Upward Arrow */
+.arrow.up {
+  border-bottom: 15px solid white;
+}
+
+/* Downward Arrow */
+.arrow.down {
+  border-top: 15px solid white;
+}
+.extract{
+  font-size: 4rem;
+  padding: 20px 20px;
+}
